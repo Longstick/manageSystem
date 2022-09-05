@@ -1,0 +1,34 @@
+.header{
+    background-color: #fbfbfb;
+}
+
+.BasicBody {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url(../img/bkg.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* color:white; */
+}
+
+.LoginPad{
+    border-radius:10px;
+    width: 350px;
+    height: 55vh;
+    padding:25px;
+    background-color: #fbfbfb;
+    position: absolute;
+    right: 10vw;
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.2);
+}
+
+.LoginPad img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 5vmin;
+    margin-top: 3vmin;
+
+}

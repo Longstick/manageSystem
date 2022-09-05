@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+.Logo{
+    /* background: deepskyblue; */
+    height:50px;
+    margin:20px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.Logo img{
+    height:80%;
+    width:80%;
+
+}
+
+.content{
+    background-color: #fbfbfb;
+    margin:20px;
+    padding: 30px;
+    min-height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 16px 0px rgba(0,0,0,0.12);
+}
