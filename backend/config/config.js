@@ -1,8 +1,8 @@
 const config = {
   host: 'localhost', 
-  database: 'hhxdata',
+  database: 'zjhdata',
   username: 'root',
-  password: 'root1234',
+  password: 'Ewqa320@',
   dialect: 'mysql',
   timezone: '+08:00',
   // port: 8011,
