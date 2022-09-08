@@ -1,34 +1,59 @@
-.header{
+
+.LoginHeader{
+    display: flex;
     background-color: #fbfbfb;
+    height: 6vh;
+    
 }
 
 .BasicBody {
     display:flex;
     justify-content:center;
     align-items: center;
-    background-image: url(../img/bkg.jpg);
+    /* background-image: url(../img/bkg.jpg); */
+    background-color: #e6f4fa;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 94vh;
     /* color:white; */
 }
 
 .LoginPad{
-    border-radius:10px;
-    width: 350px;
+    border-radius:20px;
+    width: 850px;
     height: 55vh;
-    padding:25px;
+    /* padding:25px; */
     background-color: #fbfbfb;
     position: absolute;
-    right: 10vw;
-    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    /* right: 10vw; */
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.05);
 }
 
 .LoginPad img{
-    display: block;
-    margin: auto;
-    width: 60%;
-    margin-bottom: 5vmin;
-    margin-top: 3vmin;
+    width: 100%;
+}
 
+.LoginPadIllustration{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    /* background-color: rgb(88, 154, 154); */
+    background-image: url(../img/illu.png);
+    background-size: contain;
+}
+
+.LoginModule{
+    width: 45%;
+    align-self: center;
+    padding: 50px;
+    /* display: flex; */
+}
+
+.HeaderLogo{
+    height: 60%;
+    align-self: center;
+    margin-left: 30px;
 }

@@ -15,8 +15,10 @@ export default class MainContent extends React.Component {
             <Router history={createBrowserHistory()}>
                 <Switch>
                     <Route exact path="/" component={Login} />
+                    <Route path='/signup' component={null}/>
                     {/* <Route path='/Manage' component={MainFrame}> */}
                     <MainFrame>
+                        
                         <Route path='/Manage/Device' component={Device} />
                         <Route path='/Manage/SafetyCheck' component={SafetyCheck} />
                         <Route path='/Manage/ResourceManage' component={ResourceManage} />
