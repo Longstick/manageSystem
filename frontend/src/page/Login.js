@@ -50,6 +50,8 @@ export default class Login extends React.Component {
                             <Input
                                 size="large"
                                 prefix={<UserOutlined />}
+                                allowClear
+                                placeholder="请输入账号"
                             />
                         </Form.Item>
 
@@ -61,6 +63,7 @@ export default class Login extends React.Component {
                                 size="large"
                                 type="password"
                                 allowClear
+                                placeholder="请输入密码"
                                 prefix={<LockOutlined />}
                             />
                         </Form.Item>
