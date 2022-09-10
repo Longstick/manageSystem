@@ -1,17 +1,18 @@
-
 .LoginHeader{
     display: flex;
     background-color: #fbfbfb;
     height: 6vh;
-    
+    align-items: center;
 }
+
+
 
 .BasicBody {
     display:flex;
     justify-content:center;
     align-items: center;
     /* background-image: url(../img/bkg.jpg); */
-    background-color: #e6f4fa;
+    background-color: #edf7fb;
     background-size: cover;
     width: 100vw;
     height: 94vh;
@@ -21,7 +22,7 @@
 .LoginPad{
     border-radius:20px;
     width: 850px;
-    height: 55vh;
+    height: 50vh;
     /* padding:25px; */
     background-color: #fbfbfb;
     position: absolute;
@@ -56,4 +57,11 @@
     height: 60%;
     align-self: center;
     margin-left: 30px;
+}
+
+.ForgetPass{
+    float: right;
+    margin-top: -10px;
+    margin-right: 10px;
+    /* margin-bottom: -10px; */
 }

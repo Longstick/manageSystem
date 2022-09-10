@@ -1,14 +1,16 @@
 import React from 'react';
-import { BrowserRouter,withRouter} from 'react-router-dom';
+import { BrowserRouter, Route, withRouter, Switch } from 'react-router-dom';
 import { Layout } from 'antd';
-import './css/Navi.css';
-import Navi from './components/Navi';
-import MainContent from './components/MainContent';
-import UserHead from './components/User';
+import '../css/Navi.css';
+import Navi from './Navi';
+import UserHead from './User';
+
+import Device from '../page/Device/Device';
+import SafetyCheck from '../page/SafetyCheck/SafetyCheck';
+import ResourceManage from '../page/ResourceManage';
+import Material from '../page/Material';
 
 
-
-// const {SubMenu}= Menu;
 const { Content, Sider, Footer,Header } = Layout;
 class MainFrame extends React.Component {
     render() {
@@ -33,8 +35,15 @@ class MainFrame extends React.Component {
                             <UserHead/>
                         </Header>
                         <Content className="content">
-                            {this.props.children}
-                            {/* <MainContent/> */}
+                            
+                            {/* {this.props.children} */}
+                            <Switch>
+                                <Route path='/Manage/Device' component={Device} />
+                                <Route path='/Manage/SafetyCheck' component={SafetyCheck} />
+                                <Route path='/Manage/ResourceManage' component={ResourceManage} />
+                                <Route path='/Manage/Material' component={Material} />
+                            </Switch>
+
                         </Content>
                         <Footer style={{
                             display:'flex',

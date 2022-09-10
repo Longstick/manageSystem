@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MainFrame from './MainFrame'
+// import MainFrame from './components/MainFrame'
 import MainContent from './components/MainContent'
-import Login from './page/Login'
+// import Login from './page/Login'
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
