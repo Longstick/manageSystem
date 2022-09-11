@@ -1,15 +1,17 @@
 import { Space, Typography, Avatar, Popover, Button, message} from 'antd';
 import avatar from '../img/avatar.jpg'
+import { useHistory } from 'react-router-dom'
+
+
 const {Text, Title}= Typography;
 
 function UserHead(props){
-    
+    const history = useHistory()
     const logout = ()=>{
         message.success('退出成功！')
         window.sessionStorage.removeItem('usertoken');
-        // setTimeout(() => history.push('/'), 1500)
-        setTimeout(() => window.location.reload(true), 1500)
-        // setTimeout(()=> navigator(''), 1500);
+        setTimeout(() => history.push('/'), 1500)
+        // setTimeout(() => window.location.reload(true), 1500)
     }
 
     const content=(
@@ -37,7 +39,7 @@ function UserHead(props){
         }}>
             <Popover content={content}>
                 <Space style={{float: 'right'}}>
-                    <Text strong style={{color:'white'}}>Longstick</Text>
+                    <Text>Longstick</Text>
                     <Avatar src={avatar} />
                 </Space>
             </Popover>

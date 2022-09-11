@@ -5,8 +5,6 @@
     align-items: center;
 }
 
-
-
 .BasicBody {
     display:flex;
     justify-content:center;
@@ -22,7 +20,7 @@
 .LoginPad{
     border-radius:20px;
     width: 850px;
-    height: 50vh;
+    height: 500px;
     /* padding:25px; */
     background-color: #fbfbfb;
     position: absolute;
@@ -48,9 +46,8 @@
 
 .LoginModule{
     width: 45%;
-    align-self: center;
     padding: 50px;
-    /* display: flex; */
+    align-self: center;
 }
 
 .HeaderLogo{
@@ -64,4 +61,26 @@
     margin-top: -10px;
     margin-right: 10px;
     /* margin-bottom: -10px; */
+}
+
+.LoginTitle{
+    display: block;
+    margin: 0 auto;
+}
+
+.SignupPad{
+    border-radius:20px;
+    width: 500px;
+    height: 650px;
+    background-color: #fbfbfb;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.05);
+}
+
+.RadiusInput{
+    width: 250px;
+    border-radius: 20px;
 }
