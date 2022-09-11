@@ -5,6 +5,7 @@ import '../css/login.css';
 import {
     UserOutlined,
     LockOutlined,
+    MailOutlined,
 } from '@ant-design/icons';
 import logo from '../img/3.png';
 
@@ -24,54 +25,66 @@ const Signup = props => {
             </Header>
             <Content className="BasicBody">
                 <div className="SignupPad">
-                    <Form
-                        name="register"
-                        scrollToFirstError
+                    <div className="SignupModule">
+                        <a href="/login" className="">已有账号，返回登录</a>
+                        <Title
+                            level={4}
+                            className="LoginTitle"
+                        >新用户注册</Title>
+                        <Form
+                            name="register"
+                            scrollToFirstError
 
-                    >
-                        <Form.Item 
-                            name="email"
-                            rules={[
-                                {
-                                    type: 'email',
-                                    message: '请填写正确的邮箱地址'
-                                },
-                                {
-                                    required: true,
-                                    message: '请填写邮箱'
-                                }
-                            ]}
                         >
-                            <Input
-                                className="RadiusInput"
-                                size="large"
-                            />
-                        </Form.Item>
+                            
+                            <Form.Item
+                                name="email"
+                                rules={[
+                                    {
+                                        type: 'email',
+                                        message: '请填写正确的邮箱地址'
+                                    },
+                                    {
+                                        required: true,
+                                        message: '请填写邮箱'
+                                    }
+                                ]}
+                            >
+                                <Input
+                                    className="RadiusInput"
+                                    size="large"
+                                    prefix={<MailOutlined />}
+                                    placeholder="邮箱"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                name="password"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: '请填写密码'
+                                    }
+                                ]}
+                                hasFeedback
+                            >
+                                <Input
+                                    type="password"
+                                    className="RadiusInput"
+                                    size="large"
+                                    prefix={<LockOutlined />}
+                                    placeholder="密码"
+                                />
+                            </Form.Item>
+                            <Button
+                                htmlType="submit"
+                                shape="round"
+                            >提交</Button>
+                        </Form>
                         
-                        <Form.Item 
-                            name="password"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: '请填写密码'
-                                }
-                            ]}
-                            hasFeedback
-                        >
-                            <Input
-                                type="password"
-                                className="RadiusInput"
-                                size="large"
-                            />
-                        </Form.Item>
-                        <Button
-                            htmlType="submit"
-                            shape="round"
-                        >提交</Button>
-                        
-                    </Form>
+                    </div>
+                    <div className="SignupIllustration" />
                 </div>
-
             </Content>
         </Layout>
     )

@@ -107,13 +107,10 @@ function Login(props) {
                             </Form.Item>
                         </Form>
 
-                        <Button
-                            type="link"
-                            style={{
-                                display: 'block',
-                                margin: '0 auto'
-                            }}
-                        >没有账号？点此注册</Button>
+                        <a
+                            href="/signup"
+                            className="SignupLink"
+                        >没有账号？点此注册</a>
                     </div>
                 </div>
             </Content>

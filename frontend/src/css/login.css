@@ -64,14 +64,19 @@
 }
 
 .LoginTitle{
-    display: block;
-    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.SignupLink{
+    display: flex;
+    justify-content: center;
 }
 
 .SignupPad{
     border-radius:20px;
-    width: 500px;
-    height: 650px;
+    width: 850px;
+    height: 500px;
     background-color: #fbfbfb;
     position: absolute;
     display: flex;
@@ -80,7 +85,26 @@
     box-shadow: 0 3px 10px 0px rgba(0,0,0,0.05);
 }
 
+.SignupIllustration{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    width: 55%;
+    display: flex;
+    /* background-color: rgb(88, 154, 154); */
+    background-image: url(../img/signup_illu.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.SignupModule{
+    width: 45%;
+    padding: 50px;
+    align-self: center;
+
+}
+
 .RadiusInput{
-    width: 250px;
+    /* width: 250px; */
     border-radius: 20px;
 }
