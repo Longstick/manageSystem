@@ -77,10 +77,9 @@ function Login(props) {
                                         }
                                     ]}
                                 >
-                                    <Input
+                                    <Input.Password
                                         className="RadiusInput"
                                         size="large"
-                                        type="password"
                                         allowClear
                                         placeholder="请输入密码"
                                         prefix={<LockOutlined />}
@@ -98,8 +97,6 @@ function Login(props) {
                                     size="large"
                                     style={{
                                         width: '100%',
-                                        // marginTop: '20px',
-                                        // marginBottom: '10px'
                                     }}
                                     htmlType="submit"
                                 // onClick={onFinish}

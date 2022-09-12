@@ -6,6 +6,7 @@ import {
     UserOutlined,
     LockOutlined,
     MailOutlined,
+    LeftOutlined
 } from '@ant-design/icons';
 import logo from '../img/3.png';
 
@@ -26,17 +27,39 @@ const Signup = props => {
             <Content className="BasicBody">
                 <div className="SignupPad">
                     <div className="SignupModule">
-                        <a href="/login" className="">已有账号，返回登录</a>
+
                         <Title
                             level={4}
-                            className="LoginTitle"
+                            style={{
+                                marginBottom: '30px',
+                                textAlign: 'center'
+                            }}
                         >新用户注册</Title>
                         <Form
                             name="register"
                             scrollToFirstError
 
                         >
-                            
+
+                            <Form.Item
+                                name="username"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: '请填写用户名'
+                                    }
+                                ]}
+                                hasFeedback
+                            >
+                                <Input
+                                    className="RadiusInput"
+                                    size="large"
+                                    // prefix={<LockOutlined />}
+                                    placeholder="用户名"
+                                />
+                            </Form.Item>
+
+
                             <Form.Item
                                 name="email"
                                 rules={[
@@ -53,7 +76,7 @@ const Signup = props => {
                                 <Input
                                     className="RadiusInput"
                                     size="large"
-                                    prefix={<MailOutlined />}
+                                    // prefix={<MailOutlined />}
                                     placeholder="邮箱"
                                 />
                             </Form.Item>
@@ -68,20 +91,31 @@ const Signup = props => {
                                 ]}
                                 hasFeedback
                             >
-                                <Input
-                                    type="password"
+                                <Input.Password
                                     className="RadiusInput"
                                     size="large"
-                                    prefix={<LockOutlined />}
+                                    // prefix={<LockOutlined />}
                                     placeholder="密码"
                                 />
                             </Form.Item>
-                            <Button
-                                htmlType="submit"
-                                shape="round"
-                            >提交</Button>
+
+
+                            <Form.Item>
+                                <Button
+                                    type="primary"
+                                    shape="round"
+                                    size="large"
+                                    style={{
+                                        width: '100%',
+                                        display: 'block',
+                                        margin: '0 auto',
+
+                                    }}
+                                    htmlType="submit"
+                                >提交</Button>
+                            </Form.Item>
                         </Form>
-                        
+                        <a href="/login" className="LoginLink">已有账号，返回登录</a>
                     </div>
                     <div className="SignupIllustration" />
                 </div>

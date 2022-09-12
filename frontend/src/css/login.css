@@ -76,7 +76,7 @@
 .SignupPad{
     border-radius:20px;
     width: 850px;
-    height: 500px;
+    height: 550px;
     background-color: #fbfbfb;
     position: absolute;
     display: flex;
@@ -107,4 +107,9 @@
 .RadiusInput{
     /* width: 250px; */
     border-radius: 20px;
+}
+
+.LoginLink{
+    display: flex;
+    justify-content: center;
 }
