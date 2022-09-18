@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input, Form, Button, Layout, message, Typography } from 'antd';
+import { Input, Form, Button, Layout, message, Typography, Checkbox } from 'antd';
 
 import '../css/login.css';
 import {
@@ -85,9 +85,13 @@ function Login(props) {
                                         prefix={<LockOutlined />}
                                     />
                                 </Form.Item>
-                                <a href="https://www.baidu.com" className="ForgetPass">
-                                    忘记密码
-                                </a>
+                                <div className="LoginAssist">
+                                    <Checkbox className="RememberMe">记住我</Checkbox>
+                                    <a href="https://www.baidu.com" className="ForgetPass">
+                                        忘记密码
+                                    </a>
+                                </div>
+
                             </Form.Item>
 
                             <Form.Item>
